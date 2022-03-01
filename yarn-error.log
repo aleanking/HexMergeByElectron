@@ -1,0 +1,126 @@
+Arguments: 
+  I:\firefox download\node-v10.23.0-win-x86\node-v10.23.0-win-x86\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Perl\site\bin;C:\Perl\bin;C:\Program Files (x86)\STMicroelectronics\st_toolset\asm;C:\Program Files (x86)\Silicon Labs\ISA3 Utilities\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\SiliconLabs\SimplicityStudio\v4\developer\adapter_packs\commander;C:\Program Files\TortoiseGit\bin;C:\Python27;C:\Python27\Scripts;C:\Users\Administrator\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0;C:\MinGW\bin;I:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Flash Magic;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;D:\Program Files\CMake\bin;F:\Program Files\Microsoft VS Code\bin;E:\mongodb\bin;C:\Users\Administrator\windows-build-tools\python27;I:\Program Files\Dart\dart-sdk\bin;J:\other_prj\curl-7.65.3_1-win64-mingw\curl-7.65.3-win64-mingw\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Nordic Semiconductor\nrf-command-line-tools\bin\;G:\Tool\AStyle_3.1_windows\AStyle\bin;I:\SiliconLabs\SimplicityStudio\v4\developer\adapter_packs\commander;I:\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;I:\firefox download\node-v10.23.0-win-x86\node-v10.23.0-win-x86;I:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin;C:\gnuarmemb\bin;C:\gnuarmemb\8 2019-q3-update\bin;C:\gnuarmemb\7 2018-q2-update\bin;G:\Tool\NZPP_4.3\EFR32;C:\Program Files (x86)\dt\whr1prog;;I:\Program Files\Docker Toolbox;D:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\Administrator\AppData\Roaming\npm;I:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.7\protocol\zigbee\tool\image-builder;I:\Program Files\Docker Toolbox
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  10.23.0
+
+Platform: 
+  win32 ia32
+
+npm manifest: 
+  {
+    "name": "my-project",
+    "version": "0.0.1",
+    "author": "test",
+    "description": "An electron-vue project",
+    "license": null,
+    "main": "./dist/electron/main.js",
+    "scripts": {
+      "build": "node .electron-vue/build.js && electron-builder",
+      "build:dir": "node .electron-vue/build.js && electron-builder --dir",
+      "build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
+      "build:web": "cross-env BUILD_TARGET=web node .electron-vue/build.js",
+      "dev": "node .electron-vue/dev-runner.js",
+      "pack": "npm run pack:main && npm run pack:renderer",
+      "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
+      "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
+      "postinstall": ""
+    },
+    "build": {
+      "productName": "my-project",
+      "appId": "com.example.yourapp",
+      "directories": {
+        "output": "build"
+      },
+      "files": [
+        "dist/electron/**/*"
+      ],
+      "dmg": {
+        "contents": [
+          {
+            "x": 410,
+            "y": 150,
+            "type": "link",
+            "path": "/Applications"
+          },
+          {
+            "x": 130,
+            "y": 150,
+            "type": "file"
+          }
+        ]
+      },
+      "mac": {
+        "icon": "build/icons/icon.icns"
+      },
+      "win": {
+        "icon": "build/icons/icon.ico"
+      },
+      "linux": {
+        "icon": "build/icons"
+      }
+    },
+    "dependencies": {
+      "vue": "^2.5.16",
+      "axios": "^0.18.0",
+      "vue-electron": "^1.0.6",
+      "vue-router": "^3.0.1",
+      "vuex": "^3.0.1",
+      "vuex-electron": "^1.0.0"
+    },
+    "devDependencies": {
+      "ajv": "^6.5.0",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.4",
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-stage-0": "^6.24.1",
+      "babel-register": "^6.26.0",
+      "babel-minify-webpack-plugin": "^0.3.1",
+      "cfonts": "^2.1.2",
+      "chalk": "^2.4.1",
+      "copy-webpack-plugin": "^4.5.1",
+      "cross-env": "^5.1.6",
+      "css-loader": "^0.28.11",
+      "del": "^3.0.0",
+      "devtron": "^1.4.0",
+      "electron": "^2.0.4",
+      "electron-debug": "^1.5.0",
+      "electron-devtools-installer": "^2.2.4",
+      "electron-builder": "^20.19.2",
+      "mini-css-extract-plugin": "0.4.0",
+      "file-loader": "^1.1.11",
+      "html-webpack-plugin": "^3.2.0",
+      "multispinner": "^0.2.1",
+      "node-loader": "^0.6.0",
+      "node-sass": "^4.9.2",
+      "sass-loader": "^7.0.3",
+      "style-loader": "^0.21.0",
+      "url-loader": "^1.0.1",
+      "vue-html-loader": "^1.2.4",
+      "vue-loader": "^15.2.4",
+      "vue-style-loader": "^4.1.0",
+      "vue-template-compiler": "^2.5.16",
+      "webpack-cli": "^3.0.8",
+      "webpack": "^4.15.1",
+      "webpack-dev-server": "^3.1.4",
+      "webpack-hot-middleware": "^2.22.2",
+      "webpack-merge": "^4.1.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ETIMEDOUT 163.181.33.226:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
